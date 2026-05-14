@@ -6,24 +6,25 @@ Simulação de Evil Twin feita em Raspberry Pi
 ```ini
 
 
-### 1️⃣ Criando o arquivo do Script
-Primeiro, crie o arquivo que conterá o seu código:
-```bash
+###
+Primeiro, crie o arquivo que conterá código principal:
 nano evil.sh
+CTRL O
+CTRL X
 ```
-> **Importante:** Cole aqui o conteúdo do arquivo que está no repositório.
+> **Importante:** Cole aqui o conteúdo do arquivo que está no repositório (evil.sh).
 
 ---
 
-### 2️⃣ Criando o Serviço no Sistema
-Para que o processo rode sozinho, precisamos criar um arquivo de serviço:
+###  Criando o Serviço no Sistema
+Para que o processo rode sozinho, você precisa criar um arquivo de serviço:
 
 ```bash
 sudo nano /etc/systemd/system/eviltwin.service
 ```
 
 **Copie e cole a configuração abaixo:**
-*(Lembre-se de trocar `SEU_USUARIO` pelo seu nome de usuário real)*
+*(Lembre-se de trocar `SEU_USUARIO` pelo seu nome de usuário)*
 
 ```ini
 [Unit]
@@ -42,11 +43,11 @@ User=root
 WantedBy=multi-user.target
 ```
 
-> 💡 **Dica:** Se não souber seu nome de usuário, digite `whoami` no terminal.
+>  caso não souber seu nome de usuário, digite `whoami` no terminal.
 
 ---
 
-### 3️⃣ Permissões e Inicialização
+###  Permissões e Inicialização
 Agora, vamos dar vida ao serviço:
 
 1. **Dê permissão de execução ao script:**
@@ -67,7 +68,7 @@ Agora, vamos dar vida ao serviço:
 
 ---
 
-### 🛠️ Comandos de Gerenciamento
+###  Comandos de Gerenciamento
 
 | Ação | Comando |
 | :--- | :--- |
