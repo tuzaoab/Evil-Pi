@@ -20,7 +20,37 @@ CTRL X
 > **Importante:** Cole aqui o conteúdo do arquivo que está no repositório (evil.sh).
 
 ---
+Uma vez configurado nossa pagina WEB e nosso [Fake AP](https://github.com/them3x/tutoriais/blob/main/Tecnica-FakeAP.md)
+ usando hostapd, vamos analizar nossa interface de rede para descobrir nosso endereço IP
 
+```
+canario@raspberrypi $ ip -c a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute
+       valid_lft forever preferred_lft forever
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether b8:27:eb:28:32:c4 brd ff:ff:ff:ff:ff:ff
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether b8:27:eb:7d:67:91 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.15.14/24 brd 192.168.15.255 scope global dynamic noprefixroute wlan0
+       valid_lft 12292sec preferred_lft 12292sec
+    inet6 2804:7f0:90c1:3992:41fa:c5a8:7534:a618/64 scope global dynamic noprefixroute
+       valid_lft 43174sec preferred_lft 43174sec
+    inet6 fe80::1fa:3c40:a1de:d335/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+4: tailscale0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc pfifo_fast state UNKNOWN group default qlen 500
+    link/none
+    inet6 fe80::f5da:f7ab:aa15:f055/64 scope link stable-privacy
+       valid_lft forever preferred_lft forever
+5: wlan1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether c0:1c:30:49:d4:4d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.10.1/24 scope global wlan1
+       valid_lft forever preferred_lft forever
+```
+---
 ###  Criando o Serviço no Sistema
 Para que o processo rode sozinho, você precisa criar um arquivo de serviço:
 
