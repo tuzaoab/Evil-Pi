@@ -3,12 +3,8 @@ Simulação de Evil Twin feita em Raspberry Pi
 
 
 
-```markdown
-# 🚀 Configuração do Serviço no Raspberry Pi
+```ini
 
-Este guia ensina como transformar seu script `.sh` em um serviço do sistema (**systemd**), garantindo que ele inicie automaticamente com o Linux.
-
----
 
 ### 1️⃣ Criando o arquivo do Script
 Primeiro, crie o arquivo que conterá o seu código:
