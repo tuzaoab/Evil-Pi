@@ -7,7 +7,7 @@ Simulação de Evil Twin feita em Raspberry Pi
 
 
 ###
-Primeiro, crie o arquivo que conterá código principal:
+Crie o arquivo que conterá código principal:
 nano evil.sh
 CTRL O
 CTRL X
