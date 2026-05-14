@@ -11,6 +11,7 @@ Primeiramente baixe estes seguintes softwares:
 hostapd
 dnsmasq
 apache2
+
 Crie o arquivo que conterá código principal:
 nano evil.sh
 CTRL O
