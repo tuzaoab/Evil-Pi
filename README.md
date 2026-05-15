@@ -9,7 +9,7 @@ Simulação de Evil Twin feita em **Raspberry Pi**
 
 
 
-**É NECESSÁRIO UM ADAPTADOR QUE SUPORTE MODO DE INJEÇÃO/MONITOR!!**
+**⚠️É NECESSÁRIO UM ADAPTADOR QUE SUPORTE MODO DE INJEÇÃO/MONITOR!!⚠️**
 ```ini
 
 
