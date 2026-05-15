@@ -1,8 +1,9 @@
 # Evil-Pi
 Simulação de Evil Twin feita em Raspberry Pi 
 ![RaspBerry PI]
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-reichelt.de%2Fbilder%2Fweb%2Fxxl_ws%2FA300%2FRASPBERRY_PI_3B_PLUS_001.png&f=1&nofb=1&ipt=567bb225a6fa9ea30cb3b1ca715bb3dae57a9daff5e4e81e1a374f3a2d5ebe24" width="400">
-
+<div align="center">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-reichelt.de%2Fbilder%2Fweb%2Fxxl_ws%2FA300%2FRASPBERRY_PI_3B_PLUS_001.png&f=1&nofb=1&ipt=567bb225a6fa9ea30cb3b1ca715bb3dae57a9daff5e4e81e1a374f3a2d5ebe24" width="400">
+</div>
 
 ```ini
 
